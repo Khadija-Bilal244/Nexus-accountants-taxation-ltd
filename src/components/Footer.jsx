@@ -34,24 +34,26 @@ function Footer() {
           <li>Personal Tax Planning</li>
           <li>Financial Modeling</li>
         </ul>
-      </div>
-
-      <div className="footer-services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Budget/Forecasting</li>
-          <li>VAT Returns/Intrastate</li>
-          <li>Technology Training</li>
-          <li>Models for Internal Control</li>
-          <li>Bookkeeping/Payroll/Admin</li>
-          <li>Due Diligence</li>
-        </ul>
-
+    
         <p className="footer-note">
           We provide tailored services according to your requirements. We aim
           to work with you to plan your tax affairs, maximize your wealth, and
           provide you peace of mind.
         </p>
+      </div>
+
+      <div className="footer-right">
+        <div className="footer-services">
+          <h2>Our Services</h2>
+          <ul>
+            <li>Budget/Forecasting</li>
+            <li>VAT Returns/Intrastate</li>
+            <li>Technology Training</li>
+            <li>Models for Internal Control</li>
+            <li>Bookkeeping/Payroll/Admin</li>
+            <li>Due Diligence</li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

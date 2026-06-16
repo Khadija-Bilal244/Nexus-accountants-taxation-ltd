@@ -30,45 +30,80 @@ const reviews = [
 
 function Slider() {
   const [index, setIndex] = useState(0);
-
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((oldIndex) => {
         if (oldIndex === reviews.length - 1) {
           return 0;
         }
-
         return oldIndex + 1;
       });
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);
+
+  const nextSlide = () => {
+    setIndex((oldIndex) => {
+      if (oldIndex === reviews.length - 1) {
+        return 0;
+      }
+      return oldIndex + 1;
+    });
+  };
+
+  const prevSlide = () => {
+    setIndex((oldIndex) => {
+      if (oldIndex === 0) {
+        return reviews.length - 1;
+      }
+      return oldIndex - 1;
+    });
+  };
 
   const visibleReviews = [
     reviews[index],
     reviews[(index + 1) % reviews.length],
     reviews[(index + 2) % reviews.length]
   ];
-
-  const showReview = (review) => {
-    return (
-      <div className="review-card" key={review.name}>
-        <h3>
-          {review.name} <span>{review.stars}</span>
-        </h3>
-        <hr />
-        <p>{review.text}</p>
-      </div>
-    );
-  };
+  const totalDots = reviews.length;
 
   return (
     <div className="slider">
       <h2>Don't just take our words for it - Take theirs!</h2>
       <div className="slider-line"></div>
-      <div className="review-list">
-        {visibleReviews.map(showReview)}
+      
+      <div className="slider-wrapper">
+        <button className="slider-btn prev-btn" onClick={prevSlide}>
+          ‹
+        </button>
+
+        <div className="review-list">
+          {visibleReviews.map((review) => (
+            <div className="review-card" key={review.name}>
+              <h3>
+                {review.name} <span>{review.stars}</span>
+              </h3>
+              <hr />
+              <p>{review.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <button className="slider-btn next-btn" onClick={nextSlide}>
+          ›
+        </button>
+      </div>
+
+      {/* Dot Indicators */}
+      <div className="slider-dots">
+        {Array.from({ length: totalDots }).map((_, i) => (
+          <span
+            key={i}
+            className={`dot ${i === index ? 'active' : ''}`}
+            onClick={() => setIndex(i)}
+          />
+        ))}
       </div>
     </div>
   );
