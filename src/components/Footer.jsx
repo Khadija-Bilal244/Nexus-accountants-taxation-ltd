@@ -1,8 +1,10 @@
+
 import NexusLogo from "../assets/NexusLogo.png";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <>
+      <footer className="footer">
       <div className="footer-left">
         <img src={NexusLogo} alt="Nexus Accountants" className="footer-logo" />
 
@@ -10,17 +12,28 @@ function Footer() {
         <p className="footer-tagline">Committed to Your Peace of Mind</p>
 
         <div className="footer-socials">
-          <span>f</span>
-          <span>◎</span>
-          <span>♪</span>
-          <span>▶</span>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i className="fab fa-youtube"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
         </div>
 
         <div className="footer-contact">
           <h2>Contact Us</h2>
-          <p>Tel: +44 7540 188918</p>
-          <p>Email: accounts@nexusaccountants.co.uk</p>
-          <p>Address: 8 Ashgrove Road Ilford England IG3 9XE</p>
+          <p><i className="fas fa-phone"></i> Tel: +44 7540 188918</p>
+          <p><i className="fas fa-envelope"></i> Email: accounts@nexusaccountants.co.uk</p>
+          <p><i className="fas fa-map-marker-alt"></i> Address: 8 Ashgrove Road Ilford England IG3 9XE</p>
         </div>
       </div>
 
@@ -34,11 +47,11 @@ function Footer() {
           <li>Personal Tax Planning</li>
           <li>Financial Modeling</li>
         </ul>
-    
+
         <p className="footer-note">
-          We provide tailored services according to your requirements. We aim
+          <i className="fas fa-quote-left"></i> We provide tailored services according to your requirements. We aim
           to work with you to plan your tax affairs, maximize your wealth, and
-          provide you peace of mind.
+          provide you peace of mind. <i className="fas fa-quote-right"></i>
         </p>
       </div>
 
@@ -56,6 +69,10 @@ function Footer() {
         </div>
       </div>
     </footer>
+      <div className="footer-bottom">
+        Registered in England & Wales - Company Registration No. 11275399
+      </div>
+    </>
   );
 }
 
