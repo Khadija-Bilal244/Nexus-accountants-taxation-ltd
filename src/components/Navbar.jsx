@@ -1,18 +1,38 @@
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import NexusLogo from "../assets/NexusLogo.png";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
-      <img className="navbar-logo" src={NexusLogo} alt="Nexus Accountants" />
+      <Link to="/" className="navbar-brand" onClick={closeMenu}>
+        <img src={NexusLogo} alt="Nexus Accountants" className="navbar-logo" />
+      </Link>
 
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Sectors</li>
-        <li>Services</li>
-        <li>Blog</li>
-        <li>Pricing</li>
-        <li>Portfolio</li>
+      <button
+        className={`navbar-toggle ${isOpen ? "open" : ""}`}
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((current) => !current)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
+        <li><NavLink to="/" end onClick={closeMenu}>Home</NavLink></li>
+        <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
+        <li><NavLink to="/sectors" onClick={closeMenu}>Sectors</NavLink></li>
+        <li><NavLink to="/services" onClick={closeMenu}>Services</NavLink></li>
+        <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
+        <li><NavLink to="/pricing" onClick={closeMenu}>Pricing</NavLink></li>
+        <li><NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink></li>
+        <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
       </ul>
     </nav>
   );
