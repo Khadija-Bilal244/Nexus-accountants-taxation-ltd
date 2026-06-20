@@ -183,7 +183,7 @@ body {
 .navbar ul li a {
   cursor: pointer;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 550;
   text-transform: uppercase;
   color: black;
   padding: 5px 0;
@@ -200,6 +200,21 @@ body {
 
 .navbar ul li a.active {
   color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.navbar-links li {
+  list-style: none;
 }
 
 /* ===== NAVBAR TOGGLE (Mobile) ===== */
@@ -243,38 +258,6 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ===== MOBILE NAVBAR MENU ===== */
-.navbar-menu {
-  display: none;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0;
-  animation: slideDown 0.5s ease-in-out;
-}
-
-.navbar-menu.open {
-  display: flex;
-}
-
-.navbar-menu li {
-  font-size: 14px;
-  padding: 8px 0;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background 0.3s ease;
-}
-
-.navbar-menu li:last-child {
-  border-bottom: none;
-}
-
-.navbar-menu li:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 /* ===== RESPONSIVE NAVBAR ===== */
 @media (max-width: 1024px) {
   .navbar {
@@ -311,20 +294,15 @@ body {
     max-height: 56px;
   }
 
-  .navbar ul {
-    display: none;
+  .navbar-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar-toggle {
-    display: inline-flex;
-  }
-
-  .navbar-menu {
     display: none;
-  }
-
-  .navbar-menu.open {
-    display: flex;
   }
 }
 
@@ -333,6 +311,7 @@ body {
     padding: 15px 6%;
     flex-direction: column;
     gap: 10px;
+    height: auto;
     min-height: auto;
   }
 
@@ -341,29 +320,44 @@ body {
     margin-right: 0;
   }
 
-  .navbar ul {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
+  .navbar-links {
+    display: none !important;
     width: 100%;
-    flex: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    animation: slideDown 0.5s ease-in-out;
   }
 
-  .navbar ul li a {
+  .navbar-links.open {
+    display: flex !important;
+  }
+
+  .navbar-links li {
+    font-size: 14px;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-links li:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-links li a {
     font-size: 16px;
     padding: 4px 8px;
   }
 
   .navbar-toggle {
     display: inline-flex;
-  }
-
-  .navbar-menu {
-    display: none;
-  }
-
-  .navbar-menu.open {
-    display: flex;
   }
 }
 
@@ -385,7 +379,7 @@ body {
     padding: 3px 6px;
   }
 
-  .navbar-menu li {
+  .navbar-links li {
     font-size: 12px;
   }
 }
@@ -400,7 +394,7 @@ body {
     width: 120px;
   }
 
-  .navbar-menu li {
+  .navbar-links li {
     font-size: 11px;
   }
 }
@@ -428,6 +422,8 @@ body {
 .hero-title {
   text-align: center;
   margin-top: 20px;
+  position: relative;
+  top: 14vh;
   animation: slideInLeft 0.7s ease-in-out;
 }
 
@@ -446,14 +442,14 @@ body {
 .hero-title h1,
 .hero-title h2 {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 55px;
   line-height: 1.2;
   text-shadow: 2px 2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000, -2px -2px 0 #000000;
   animation: slideInRight 0.7s ease-in-out;
 }
 
 .hero-title h2 {
-  margin-top: 8px;
+  margin-top: 10px;
   animation-delay: 0.2s;
 }
 
@@ -466,14 +462,14 @@ body {
   overflow: visible;
   margin-bottom: 20px;
   position: relative;
-  z-index: 2;
-  margin-top: 255px;
+  z-index: 1;
+  margin-top: 110px;
   animation: scaleIn 0.6s ease-in-out;
   padding:10px;
 }
 
 .hero-cards div {
-  padding: 20px 20px;
+  padding: 18px 18px;
   border-radius: 8px;
   border-right: 1px solid rgba(255, 255, 255, 0.7);
   transition: background 0.3s ease, transform 0.3s ease;
