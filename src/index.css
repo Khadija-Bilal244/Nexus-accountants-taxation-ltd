@@ -171,7 +171,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 35px;
   align-items: center;
   justify-content: center;
   margin: 0;
