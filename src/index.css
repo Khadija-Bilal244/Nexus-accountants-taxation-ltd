@@ -127,7 +127,9 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-}/* ===== NAVBAR STYLES ===== */
+}
+
+/* ===== NAVBAR STYLES ===== */
 .navbar {
   background: linear-gradient(to right, #04f7ff, #0272bd);
   height: auto;
@@ -320,12 +322,10 @@ body {
     max-height: 65px;
   }
 
-  /* HIDE desktop menu on mobile */
   .navbar-links ul {
     display: none !important;
   }
 
-  /* SHOW mobile menu when open */
   .navbar-links {
     position: absolute;
     top: 100%;
@@ -394,7 +394,6 @@ body {
     transform: scale(1.05);
   }
 
-  /* Show hamburger toggle on mobile - NO BORDER */
   .navbar-toggle {
     display: flex !important;
     border: none !important;
@@ -706,7 +705,6 @@ form button:active {
 }
 
 /* ===== RESPONSIVE ===== */
-/* Tablet - 2 columns */
 @media (max-width: 992px) {
   .why-choose-nexus {
     padding: 60px 6%;
@@ -731,7 +729,6 @@ form button:active {
   transform: scale(1.25);}
 }
 
-/* Mobile - 2 columns (as requested) */
 @media (max-width: 768px) {
   .why-choose-nexus {
     padding: 50px 5%;
@@ -773,7 +770,6 @@ form button:active {
   transform: scale(1.25);}
 }
 
-/* Small Mobile - 2 columns (still 2 on small screens) */
 @media (max-width: 500px) {
   .why-choose-nexus {
     padding: 40px 4%;
@@ -815,7 +811,6 @@ form button:active {
   transform: scale(1.25);}
 }
 
-/* Very Small - still 2 columns with smaller text */
 @media (max-width: 380px) {
   .why-choose-grid {
     gap: 10px;
@@ -2348,7 +2343,6 @@ form button:active {
 }
 
 /* ===== RESPONSIVE STYLES ===== */
-/* (All your existing responsive styles remain the same) */
 
 @media (max-width: 1024px) {
   .slider {
@@ -2905,8 +2899,6 @@ form button:active {
     font-size: 22px;
   }
 }
-
-/* ===== ADDITIONAL RESPONSIVE STYLES (from original) ===== */
 
 @media (max-width: 768px) {
   .hero {
