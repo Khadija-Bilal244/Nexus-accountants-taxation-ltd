@@ -1,17 +1,19 @@
-/* ===== NAVBAR STYLES ===== */
 .navbar {
   background: linear-gradient(to right, #04f7ff, #0272bd);
   height: auto;
   min-height: 80px;
   box-shadow: 0 5px 30px #525252;
   padding: 10px 6%;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: background-color 0.4s ease, padding 0.4s ease;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -39,7 +41,6 @@
   filter: brightness(1.5) contrast(1.5);
 }
 
-/* ===== NAVBAR LINKS ===== */
 .navbar-links {
   display: flex;
   align-items: center;
@@ -86,7 +87,6 @@
   color: white;
 }
 
-/* ===== NAVBAR TOGGLE ===== */
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -132,7 +132,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ===== NAVBAR RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .navbar {
     padding: 10px 5% !important;
