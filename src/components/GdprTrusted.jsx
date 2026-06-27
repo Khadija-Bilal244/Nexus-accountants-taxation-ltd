@@ -30,7 +30,7 @@ function GdprTrusted() {
   return (
     <section className="gdpr-trusted-section">
       <div className="gdpr-section-heading">
-        <h2>Our Services &amp; Trusted Partners</h2>
+        <h2>Supporting UK Businesses</h2>
         <p>Comprehensive accounting solutions backed by industry-leading tools</p>
       </div>
       <div className="gdpr-inner">
