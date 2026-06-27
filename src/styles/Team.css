@@ -109,7 +109,7 @@
   }
 
   .team-background .img-container img {
-    height: 240px;
+    height: 300px;
   }
 }
 
@@ -125,7 +125,7 @@
   }
 
   .team-background .img-container img {
-    height: 180px;
+    height: 240px;
   }
 
   .team-background .caption h4 {
@@ -144,6 +144,6 @@
   }
 
   .team-background .img-container img {
-    height: 140px;
+    height: 200px;
   }
 }
