@@ -1,7 +1,7 @@
 /* ===== FAQ SECTION ===== */
 .faq-section {
   padding: 70px 10% 80px;
-  background: linear-gradient(120deg, #11d9d2, #0876b5);
+  background: white;
   animation: fadeIn 0.8s ease-in-out;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .faq-item {
-  background: #ffffff;
+  background: hsla(194, 63%, 62%, 0.591);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   overflow: hidden;

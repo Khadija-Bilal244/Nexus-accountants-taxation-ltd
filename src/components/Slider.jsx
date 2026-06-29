@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "../styles/Slider.css";
 
 const reviews = [
@@ -8,72 +8,105 @@ const reviews = [
     text: "Amazing accountant firm, highly recommend wouldn't use anyone else. Very thorough and helped me with all of my accounting needs. The support has been invaluable to our company. Imran's expertise is second to none. We would have no hesitation in recommending him and the team at Nexus Accountant & Taxation."
   },
   {
-    name: "Dirtshoo Cleaning Services",
-    stars: "★★★★☆",
-    text: "I am extremely delighted to write a review about Nexus Accountants & Taxation Limited. The team at Nexus Accountants is highly professional and always meet your expectations. Since time plays a significant role when filing your Tax Returns, Nexus will always take care of it and let you feel in safe hands."
-  },
-  {
     name: "Easy Goods LTD",
-    stars: "★★★★☆",
+    stars: "★★★★★",
     text: "I am glad to work with a professional, dedicated and dynamic team. Very knowledgeable regarding all accounting and taxation issues. Always willing to help and guide me in my business. I would highly recommend Nexus accountants and taxation."
   },
   {
-    name: "Small Business Client",
+    name: "Abubakr Akhtar",
     stars: "★★★★★",
-    text: "Nexus made our accounts simple and stress free. Their advice was clear, quick and very helpful for our company."
+    text: "Professionals at their work, would highly recommend."
   },
   {
-    name: "Tax Return Client",
+    name: "Asim Rehman",
     stars: "★★★★★",
-    text: "Excellent service from start to finish. The team explained everything properly and submitted my tax return on time."
+    text: "Quick response and excellent service. I will recommend to use their services."
+  },
+  {
+    name: "Theo Manolachi",
+    stars: "★★★★★",
+    text: "Absolutely amazing experience: each calculation explained in context, very good communication on different channels. Highly professional team."
+  },
+  {
+    name: "Shoaib Khalid",
+    stars: "★★★★★",
+    text: "Your team has been exceptional in handling financial matters. From expert tax advice to efficient bookkeeping, I appreciate your professionalism and dedication. You've made the process stress-free, and I highly recommend your services to others seeking reliable financial expertise. Keep up the excellent work!"
+  },
+  {
+    name: "Roshi Khalid",
+    stars: "★★★★★",
+    text: "I have had the pleasure of commending my financial matters to Nexus Accountant & Taxation, and I am absolutely exhilarated with the level of service and expertise they have consistently provided. Nexus goes above and beyond in every aspect."
+  },
+  {
+    name: "Ali Akhtar",
+    stars: "★★★★★",
+    text: "Got personal tax return done — great team, excellent service. Recommend their assistance with all tax affairs. Getting my ltd company set up through them and accountancy work. Can't recommend enough."
+  },
+  {
+    name: "Rasheed Sarpong",
+    stars: "★★★★★",
+    text: "Professional, personable, perfectionists and quite excellent. The staff are a credit to the company and their customer care is of a very high order."
+  },
+  {
+    name: "Danish Ansari",
+    stars: "★★★★★",
+    text: "Excellent service, prompt communication. Any queries and requests responded to immediately. Professional advice on taxation matters. One of the best there is."
+  },
+  {
+    name: "Gabriel de-Vere",
+    stars: "★★★★★",
+    text: "Been working with Imran since 2012 and he is an absolute brilliant and great accountant! Can not recommend enough!"
+  },
+  {
+    name: "OUATG Limited",
+    stars: "★★★★★",
+    text: "Excellent service, very open and professional."
+  },
+  {
+    name: "Sadaf Shaheen",
+    stars: "★★★★★",
+    text: "Professional team and quick response. I will recommend their service."
+  },
+  {
+    name: "Aamir Zaib",
+    stars: "★★★★★",
+    text: "Very professional, helpful and amazing understanding of our business and reporting."
+  },
+  {
+    name: "Zaheer Babar",
+    stars: "★★★★★",
+    text: "Very satisfied with the services, professionally dealt with. Highly Recommended."
   }
 ];
 
 function Slider() {
   const [index, setIndex] = useState(0);
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((oldIndex) => {
-        if (oldIndex === reviews.length - 1) {
-          return 0;
-        }
-        return oldIndex + 1;
-      });
-    }, 4000);
 
-    return () => clearInterval(timer);
+  const nextSlide = useCallback(() => {
+    setIndex((prev) => (prev + 1) % reviews.length);
   }, []);
 
-  const nextSlide = () => {
-    setIndex((oldIndex) => {
-      if (oldIndex === reviews.length - 1) {
-        return 0;
-      }
-      return oldIndex + 1;
-    });
-  };
+  const prevSlide = useCallback(() => {
+    setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  }, []);
 
-  const prevSlide = () => {
-    setIndex((oldIndex) => {
-      if (oldIndex === 0) {
-        return reviews.length - 1;
-      }
-      return oldIndex - 1;
-    });
-  };
+  // Auto-advance; resets whenever index changes (including manual nav)
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 4000);
+    return () => clearInterval(timer);
+  }, [index, nextSlide]);
 
   const visibleReviews = [
-    reviews[index],
-    reviews[(index + 1) % reviews.length],
-    reviews[(index + 2) % reviews.length]
+    { ...reviews[index], slot: 0 },
+    { ...reviews[(index + 1) % reviews.length], slot: 1 },
+    { ...reviews[(index + 2) % reviews.length], slot: 2 },
   ];
-  const totalDots = reviews.length;
 
   return (
     <div className="slider">
       <h2>Don't just take our words for it - Take theirs!</h2>
       <div className="slider-line"></div>
-      
+
       <div className="slider-wrapper">
         <button className="slider-btn prev-btn" onClick={prevSlide}>
           ‹
@@ -81,7 +114,7 @@ function Slider() {
 
         <div className="review-list">
           {visibleReviews.map((review) => (
-            <div className="review-card" key={review.name}>
+            <div className="review-card" key={review.slot}>
               <h3>
                 {review.name} <span>{review.stars}</span>
               </h3>
@@ -96,12 +129,11 @@ function Slider() {
         </button>
       </div>
 
-      {/* Dot Indicators */}
       <div className="slider-dots">
-        {Array.from({ length: totalDots }).map((_, i) => (
+        {reviews.map((_, i) => (
           <span
             key={i}
-            className={`dot ${i === index ? 'active' : ''}`}
+            className={`dot ${i === index ? "active" : ""}`}
             onClick={() => setIndex(i)}
           />
         ))}

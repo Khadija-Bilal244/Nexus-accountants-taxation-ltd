@@ -23,8 +23,8 @@ function Home() {
       <GdprTrusted/>
       <Team/>
       <Slider />
-      <ContactForm />
       <FAQSection />
+      <ContactForm />
     </>
   );
 }
