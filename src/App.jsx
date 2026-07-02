@@ -9,7 +9,6 @@ import Services from "./components/Services";
 import Blog from "./components/Blog";
 import Pricing from "./components/Pricing";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
 import "./styles/global.css";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
