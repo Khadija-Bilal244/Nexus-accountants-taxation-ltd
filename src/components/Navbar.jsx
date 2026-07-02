@@ -35,7 +35,6 @@ function Navbar() {
           <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
           <li><NavLink to="/pricing" onClick={closeMenu}>Pricing</NavLink></li>
           <li><NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink></li>
-          <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
         </ul>
       </div>
     </nav>
