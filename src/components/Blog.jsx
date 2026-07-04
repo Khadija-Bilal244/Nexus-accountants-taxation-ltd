@@ -4,7 +4,7 @@ import descriptionImg from "../assets/blog1a.png";
 import descriptionImg6 from "../assets/conference.jpeg";
 import descriptionImg7 from "../assets/conference1.png";
 import descriptionImg8 from "../assets/conference2.png";
-import img from "../assets/blog-mobile.png";
+import img from "../assets/blog.png";
 import Heading from "../common/Heading";
 import CardBlog from "./CardBlog";
 import AnimatedImages from "./AnimatedImages";
