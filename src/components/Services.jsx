@@ -33,17 +33,10 @@ const Services = () => {
           />
           <div className="description-text">
             <p>
-              Nexus Accountants is a business service company. We provide a
-              range of Accounting and Financial services to businesses
-              throughout the UK. NEXUS mission is to deliver a portfolio of
-              diversified, specialized, and strategic accounting services for
-              our clients. Our team believes in establishing Nexus as a
-              successful company that ensures satisfaction, success, and
-              optimal benefits for its employees as well as its clients. To
-              create a company where talent, skills, creativity, and
-              professionalism thrive, and we translate this into thriving
-              businesses of our clients. We want to carve a unique niche for
-              our company in the field of accountancy in the UK.
+              Nexus Accountants is a trusted business advisory firm providing professional accounting, taxation, payroll, and financial services to businesses across the UK. Our mission is to deliver tailored, strategic, and technology-driven solutions that help clients stay compliant with current UK legislation while supporting sustainable growth.
+              We are committed to building long-term relationships through trust, integrity, and exceptional service. By fostering a culture of professionalism, innovation, and continuous development, we create value for both our team and our clients.
+              Our ambition is to be recognised as a leading UK accountancy firm, delivering expert advice, practical solutions, and outstanding service that helps businesses grow with confidence.
+
             </p>
           </div>
         </div>

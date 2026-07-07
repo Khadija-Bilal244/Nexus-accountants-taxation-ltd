@@ -12,35 +12,35 @@ function WhyChooseNexus() {
     {
       id: 1,
       image: h1,
-      title: "Dedicated accountant",
+      title: "Dedicated Accountant",
       description: "A qualified accountant will be your main point of contact offering unlimited support for you and your business.",
       alt: "Dedicated accountant"
     },
     {
       id: 2,
       image: h2,
-      title: "Quick response",
+      title: "Quick Response",
       description: "All emails and calls will be returned within 24 hours.",
       alt: "Quick response"
     },
     {
       id: 3,
       image: h3,
-      title: "Evening & weekends",
+      title: "Evening & Weekends",
       description: "Schedule an appointment for the weekend via Zoom or Microsoft Teams.",
       alt: "Evening & weekends"
     },
     {
       id: 4,
       image: h4,
-      title: "Grow your business",
+      title: "Grow Your Business",
       description: "Our expertise help to optimise your business growth and development.",
       alt: "Grow your business"
     },
     {
       id: 5,
       image: h5,
-      title: "Fixed fees",
+      title: "Fixed Fees",
       description: "Transparent fees charged on a monthly basis therefore avoiding any nasty surprises.",
       alt: "Fixed fees"
     },

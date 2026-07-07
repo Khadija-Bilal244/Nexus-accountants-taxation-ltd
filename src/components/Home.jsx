@@ -6,7 +6,6 @@ import ContactForm from "./ContactForm";
 import FAQSection from "./FAQSection";
 import PopularServices from "./PopularServices";
 import ImpactStats from "./ImpactSales";
-import WhyChooseNexus from "./WhyChooseNexus";
 import Sectors from "./Sectors";
 import GdprTrusted from "./GdprTrusted";
 import Team from "./Team";
@@ -16,7 +15,6 @@ function Home() {
     <>
       <Hero />
       <HeroSlogan />
-      <WhyChooseNexus/>
       <Superiority />
       <PopularServices/>
       <ImpactStats/>

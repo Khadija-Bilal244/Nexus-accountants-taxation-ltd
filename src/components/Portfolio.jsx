@@ -27,17 +27,9 @@ const Portfolio = () => {
           />
           <div className="portfolio-text">
             <p>
-              At Nexus, we are a London-based firm of accountants dedicated to
-              providing comprehensive tax and accounting solutions for
-              businesses and individuals. Founded by M. Shahid, who brings over
-              a decade of experience as an FD and FC for various international
-              businesses, Nexus is committed to empowering clients through
-              modern techniques that honor cultural values, helping them achieve
-              long-term success. Under Shahid's leadership, the firm has
-              exceeded its goals, offering clients peace of mind by managing
-              their financial matters and allowing them to focus on business
-              growth. Our global expertise spans the UK, EU, Russia, Dubai, and
-              the Asian region, ensuring reliable, tailored solutions.
+              At Nexus, we are a London-based firm of accountants committed to delivering expert accounting, taxation, payroll, and business advisory services to businesses and individuals across the UK. Founded by M. Shahid, whose extensive experience as a Finance Director and Financial Controller spans a range of international organisations, Nexus combines technical expertise with a client-focused approach to support long-term success.
+              Under M. Shahid's leadership, we have built a reputation for providing reliable, proactive, and tailored financial solutions. By staying up to date with current UK tax legislation and embracing modern digital accounting practices, we help clients remain compliant, improve financial performance, and focus on growing their businesses with confidence. Our international experience across the UK, Europe, the Middle East, and Asia enables us to deliver practical solutions that meet the needs of today's dynamic business environment.
+
             </p>
           </div>
         </div>
@@ -45,13 +37,9 @@ const Portfolio = () => {
         <div className="portfolio-content second-description">
           <div className="portfolio-text">
             <p>
-              NEXUS mission is to deliver a portfolio of diversified,
-              specialized, and strategic accounting services for our clients.
-              Our team believes in establishing Nexus as a successful company
-              that ensures satisfaction, success, and optimal benefits for its
-              employees as well as its clients. We are aiming to deliver
-              additional services to our clients with a deep-rooted
-              relationship.
+             Our mission is to deliver specialised, strategic, and reliable accounting services that support businesses across the UK. We provide expert guidance, modern financial solutions, and proactive advice to help clients remain compliant with current UK legislation and achieve sustainable growth.
+             We are committed to building long-term relationships through trust, professionalism, and exceptional service, continually expanding our expertise to deliver greater value as our clients' businesses grow.
+
             </p>
           </div>
           <img
@@ -96,33 +84,18 @@ const Portfolio = () => {
           />
           <div className="portfolio-text">
             <p>
-              Established in 2018, Nexus Accountants & Taxation Limited is a
-              certified firm led by M. Shahid, a seasoned professional with over
-              15 years of experience in accounting and finance. Beginning his
-              career with a boutique firm in Northwest London while pursuing an
-              Honors Degree in Accounting and Finance, M. Shahid swiftly
-              advanced to roles such as Financial Director, overseeing
-              substantial client portfolios. His expertise extends to managing
-              financial operations for commercial entities with turnovers
-              exceeding £300 million. After a successful tenure, he founded
-              Nexus Accountants & Taxation Limited, dedicated to delivering
-              exceptional financial services.
+              Established in 2018, Nexus Accountants & Taxation Limited is a trusted UK accountancy firm led by M. Shahid, an experienced finance professional with over 15 years of expertise in accounting, taxation, and business advisory services. Beginning his career with a respected accountancy practice in North West London while completing an Honours Degree in Accounting and Finance, he progressed into senior finance leadership roles, including Financial Director, managing diverse client portfolios across multiple industries.
+              Drawing on extensive experience supporting businesses of all sizes, including organisations with significant turnover, M. Shahid founded Nexus with a clear vision—to provide professional, proactive, and client-focused financial solutions. Today, Nexus combines technical expertise with modern digital accounting practices to help businesses remain compliant with current UK legislation, make informed financial decisions, and achieve sustainable growth.
+
             </p>
           </div>
         </div>
         <div className="portfolio-content second-description">
           <div className="portfolio-text">
             <p>
-              The Nexus team consists of nine members, including four fully
-              qualified members of the Association of Chartered Accountants and
-              a partner who is a Chartered Financial Analyst. The team also
-              includes experienced bookkeepers, payroll, and HR managers,
-              collectively bringing 25 to 30 years of industry experience.
-              Although Nexus Accountants & Taxation Ltd is a small firm, it
-              delivers services comparable to medium-sized firms. Clients
-              benefit from the extensive knowledge and expertise typically
-              offered by larger firms while enjoying a fee structure aligned
-              with that of small to medium-sized firms.
+              The Nexus team is made up of experienced accounting and finance professionals with expertise across accounting, taxation, payroll, bookkeeping, HR, and business advisory services. Our qualified specialists bring together decades of industry experience, delivering practical solutions tailored to the needs of businesses across the UK.
+              While Nexus is a boutique firm, we provide the expertise, technical knowledge, and personalised service you would expect from a larger practice. Our clients benefit from dedicated support, proactive advice, and cost-effective solutions—receiving high-quality professional services without the complexity or fees often associated with larger firms.
+
             </p>
           </div>
           <img

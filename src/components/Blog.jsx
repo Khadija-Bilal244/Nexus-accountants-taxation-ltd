@@ -38,14 +38,8 @@ const Blog = () => {
           />
           <div className="blog-description-text first-description">
             <p>
-              Accounting contributes to financial growth by providing clarity
-              on a business's financial health, enabling effective budgeting,
-              controlling costs, optimizing capital, ensuring tax efficiency,
-              attracting funding, monitoring key performance indicators,
-              ensuring compliance, managing cash flow, and guiding strategic
-              decision-making. It serves as a crucial tool for informed
-              decision-making and resource allocation, ultimately driving
-              business expansion and profitability.
+              Effective accounting is the foundation of sustainable business growth. It provides a clear understanding of your financial performance, helping you manage cash flow, control costs, plan budgets, and make informed business decisions with confidence. Accurate financial reporting also supports tax efficiency, compliance with current UK legislation, and better preparation for future opportunities.
+              At Nexus, we transform financial data into practical insights that help businesses improve profitability, optimise resources, secure funding where required, and achieve long-term success. By combining expert advice with proactive planning, we help you focus on growing your business while maintaining strong financial control.
             </p>
           </div>
         </div>
@@ -197,36 +191,28 @@ const Blog = () => {
           />
           <div className="room-text">
             <b>M. Shahid highlighted key concerns such as:</b>
+            <p>M. Shahid discussed the practical challenges often encountered by British Pakistanis and overseas Pakistanis when managing their UK financial affairs, including:</p>
             <ul className="room-list">
-              <li>Navigating legal and financial complexities abroad.</li>
-              <li>
-                Facilitating seamless financial management for Pakistanis
-                living overseas.
-              </li>
-              <li>Providing expert guidance on tax planning and compliance.</li>
+              <li>Meeting UK accounting and taxation obligations.</li>
+              <li>Maintaining accurate financial records and statutory compliance.</li>
+              <li>Planning tax affairs efficiently within the framework of UK legislation.</li>
+              <li>Receiving reliable professional advice to support business growth and financial decision-making.</li>
             </ul>
-            <p>
-              At Nexus Accountants, we are committed to supporting overseas
-              Pakistanis by offering expert financial services.
-            </p>
+            <p>Nexus Accountants & Taxation Limited provides professional accountancy, taxation, payroll, bookkeeping, and business advisory services to individuals and businesses across the UK, including clients with international connections. Our advice is delivered in accordance with UK legislation and professional standards, helping clients remain compliant while planning for long-term success.</p>
           </div>
         </div>
 
         <div className="room-content second-description">
           <div className="room-text">
             <b>M. Shahid highlighted key concerns such as:</b>
+            <p>M. Shahid emphasised the importance of strong governance and sound financial leadership for businesses operating in today's evolving economic environment, including:</p>
             <ul className="room-list">
-              <li>Navigating legal and financial complexities abroad.</li>
-              <li>
-                Facilitating seamless financial management for Pakistanis
-                living overseas.
-              </li>
-              <li>Providing expert guidance on tax planning and compliance.</li>
+              <li>Building robust financial systems and internal controls.</li>
+              <li>Ensuring compliance with UK accounting and taxation legislation.</li>
+              <li>Using timely financial information to support strategic decision-making.</li>
+              <li>Promoting sustainable business growth through effective financial planning and risk management.</li>
             </ul>
-            <p>
-              At Nexus Accountants, we are committed to supporting overseas
-              Pakistanis by offering expert financial services.
-            </p>
+            <p>At Nexus Accountants & Taxation Limited, we work closely with business owners to deliver practical accountancy, taxation, and advisory services that strengthen financial performance, support compliance, and provide the insight needed to make informed commercial decisions.</p>
           </div>
           <img
             src={descriptionImg8}

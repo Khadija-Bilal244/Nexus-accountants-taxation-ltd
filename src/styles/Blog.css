@@ -1017,6 +1017,14 @@ html, body {
     padding: 8px;
   }
 
+  .room-list {
+    padding-right: 4px;
+  }
+
+  .room-list li {
+    margin-bottom: 6px;
+  }
+
   .student-training-text h3 {
     font-size: 1.1rem;
   }

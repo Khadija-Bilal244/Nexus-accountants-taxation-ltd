@@ -1,6 +1,6 @@
 import React from "react";
 import SectorBack from "../common/Sector.jsx";
-import img from "../assets/whowehelp-sectors.png";
+import img from "../assets/glasgow.png";
 import "../styles/Sectors-page.css";
 import Awards from "../components/ImpactSales.jsx";
 import Location from "../components/Sectors.jsx";
@@ -30,23 +30,9 @@ const Help = () => {
           />
           <div className="portfolio-description-text first-description">
             <p>
-              Customers of Nexus have in the past tended to be small
-              businesses. Businesses large enough to require proper expertise
-              in finance and accounting but not big enough to be able to
-              afford a full-time Finance Director. We at Nexus have the
-              experience and expertise to assist any kind of business of any
-              size. M Shahid has served Unicorns as well for their modelling
-              purposes to get funding from various investors during the first
-              year of trade which is considered one of the major leads for
-              Nexus. Our main clients have been companies with Turnover over
-              £6 million. We have had businesses that were mere start-ups and
-              within no time they established now are classified as
-              medium-sized companies. We believe that the Small Enterprises
-              Sector plays a pivotal role in the overall economy of this
-              country. It is estimated that in the EU, SMEs account for 99% of
-              business numbers and 40 to 50% of the GDP. We strongly believe
-              that it is the Small Businesses that will pave the way for
-              recovery in the economy in 2019 and 2020.
+             Many of Nexus' clients are small and medium-sized businesses that require expert financial guidance without the cost of employing a full-time Finance Director. We also support growing companies and established organisations, providing tailored accounting, tax, and strategic advisory services that evolve with their needs.
+             Our team has extensive experience working with businesses at every stage of their journey from ambitious start-ups to companies generating multi-million-pound turnover. We have supported founders with financial planning, forecasting, and investment-ready modelling, helping businesses secure funding and build strong foundations for sustainable growth.
+             We firmly believe that SMEs are the backbone of the UK economy. By providing proactive advice, modern digital accounting solutions, and expert guidance in line with current UK legislation, we help businesses remain compliant, improve performance, and confidently plan for the future. Our success is measured by the long-term growth and achievements of the clients we proudly support.
             </p>
           </div>
         </div>
@@ -60,21 +46,8 @@ const Help = () => {
         <div className="portfolio-description-content">
           <div className="portfolio-description-text">
             <p>
-              Nexus primarily serves small businesses, particularly those in
-              the services sector, many of which are family-owned. These
-              businesses excel in their fields but often lack the financial
-              expertise needed for strategic planning, whether it's navigating
-              growth or managing costs during challenging times such as a
-              recession. Nexus provides the necessary tools to support
-              businesses through these tough periods. In addition to small
-              businesses, Nexus also serves High-Net-Worth individuals,
-              helping them acquire businesses and assets at unprecedented
-              values. Whether these acquisitions involve equity or debt, we
-              are in a unique period where individuals and companies with
-              substantial cash reserves are seizing opportunities to make
-              significant returns on assets purchased at current values.
-              Structuring these acquisitions in a well-planned, tax-efficient
-              way is critical for maximizing future returns.
+              Nexus primarily supports small and medium-sized businesses across a wide range of industries, including many family-owned enterprises. While these businesses are experts in their own fields, they often benefit from experienced financial guidance to support growth, improve cash flow, manage costs, and adapt to changing market conditions. Our practical advice and tailored accounting solutions help businesses make confident decisions while remaining compliant with current UK tax and regulatory requirements.
+              We also work closely with high-net-worth individuals, entrepreneurs, and investors, providing strategic advice on business acquisitions, investments, and wealth management. Whether a transaction is financed through equity, debt, or a combination of both, we help structure it in a commercially sound and tax-efficient manner, ensuring compliance with UK legislation while supporting long-term financial success and sustainable returns.
             </p>
           </div>
           <img

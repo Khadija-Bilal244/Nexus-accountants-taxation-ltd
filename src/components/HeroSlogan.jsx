@@ -58,6 +58,10 @@ function HeroSlogan() {
 
   return (
     <section className="hero-slogan-section">
+      <div className="hero-title">
+        <h1>Nexus Accountants</h1>
+        <h2>& Taxation Limited</h2>
+      </div>
       <div className="hero-slogan-card">
         <div className="hero-slogan-divider"></div>
         <p className="hero-slogan-line">

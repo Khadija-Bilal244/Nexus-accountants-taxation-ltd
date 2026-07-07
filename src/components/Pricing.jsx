@@ -25,15 +25,9 @@ const Pricing = () => {
             />
             <div className="description-text">
               <p>
-                Whether you're an individual, partnership, or limited company,
-                our firm offers expert, tailored services to meet your specific
-                needs at the right time. We pride ourselves on developing close,
-                one-to-one relationships with our clients, allowing us to
-                provide personalized, strategic advice that enhances both
-                business and personal finances. Alongside dependable support, we
-                deliver forward-thinking, innovative solutions designed for
-                today's dynamic business environment, ensuring your financial
-                success is always in capable hands.
+                Whether you are an individual, partnership, sole trader, or limited company, Nexus provides expert accounting, taxation, and business advisory services tailored to your unique needs. We take the time to understand your goals, enabling us to deliver practical, personalised advice that supports both your financial wellbeing and business success.
+                Our client-focused approach is built on long-term relationships, trusted guidance, and proactive support. By combining professional expertise with modern digital accounting solutions and up-to-date knowledge of UK legislation, we help you stay compliant, make informed decisions, and achieve sustainable growth with confidence.
+
               </p>
             </div>
           </div>

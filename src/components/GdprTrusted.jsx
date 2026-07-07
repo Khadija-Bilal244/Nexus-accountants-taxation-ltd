@@ -50,15 +50,11 @@ function GdprTrusted() {
             returns.
           </h3>
           <p>
-            Nexus Accountants is a business service company. We provide a range
-            of Accounting and Financial services to businesses throughout the
-            UK. NEXUS mission is to deliver a portfolio of diversified,
-            specialized, and strategic accounting services for our clients.
+           We take care of your HMRC dealings, ensuring tax returns, statutory filings, and compliance obligations are completed accurately and on time in line with current UK legislation.
+           Nexus Accountants provides professional accounting, taxation, payroll, and business advisory services to businesses across the UK. Our mission is to deliver tailored, reliable, and technology-driven financial solutions that support growth, improve efficiency, and give our clients confidence in every financial decision.
           </p>
           <p>
-            Our team believes in establishing Nexus as a successful company
-            that ensures satisfaction, success, and optimal benefits for its
-            employees as well as its clients.
+            We are committed to building lasting relationships through expert advice, exceptional service, and a proactive approach that helps our clients succeed while staying fully compliant.
           </p>
         </div>
       </div>

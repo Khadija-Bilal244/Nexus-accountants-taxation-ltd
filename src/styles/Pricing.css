@@ -63,9 +63,6 @@
   }
 }
 
-/* Touch devices: glow shows only while actively pressing anywhere in
-   the box (including directly on the pound icon), and clears the
-   instant you release - no stuck state. */
 .description-content:active {
   border-color: rgb(4, 247, 255);
   box-shadow: 0 0 25px rgba(4, 247, 255, 0.5);

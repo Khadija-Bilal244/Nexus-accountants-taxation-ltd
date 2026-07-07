@@ -1,11 +1,45 @@
 /* ============ HERO SLOGAN SECTION ============ */
+.hero-slogan-section,
+.hero-slogan-section *,
+.hero-slogan-section *::before,
+.hero-slogan-section *::after {
+  box-sizing: border-box;
+}
+
 .hero-slogan-section {
   width: 100%;
   padding: 50px 20px;
   background: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-title {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0 12px;
+  text-align: center;
+  animation: slideInLeft 0.7s ease-in-out;
+}
+
+.hero-title h1,
+.hero-title h2 {
+  color: black;
+  font-size: clamp(1.5rem, 5.5vw, 45px);
+  font-weight: 500;
+  line-height: 1.1;
+  word-spacing: 6px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
+  animation: slideInRight 0.7s ease-in-out;
+}
+
+.hero-title h2 {
+  margin-top: 15px;
+  animation-delay: 0.2s;
 }
 
 .hero-slogan-card {
@@ -80,10 +114,10 @@
 
 .hero-slogan-quote {
   color: rgb(4, 190, 255);
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 800;
-  line-height: 0;
-  vertical-align: -0.08em;
+  line-height: inherit;
+  vertical-align: baseline;
 }
 
 .hero-slogan-quote-open {
@@ -135,15 +169,20 @@
     border-radius: 16px;
   }
 
-  .hero-slogan-eyebrow {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    padding: 5px 14px;
+  .hero-slogan-line {
+    font-size: 1.15rem;
+    line-height: 1.5;
   }
 
-  .hero-slogan-line {
-    font-size: 1.15rem !important;
-    line-height: 1.5;
+  .hero-title {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .hero-title h1,
+  .hero-title h2 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
   }
 }
 
@@ -163,20 +202,33 @@
     margin-bottom: 16px;
   }
 
-  .hero-slogan-eyebrow {
-    font-size: 0.68rem;
-    padding: 4px 12px;
-    margin-bottom: 14px;
+  .hero-slogan-line {
+    font-size: 0.95rem;
+    line-height: 1.45;
   }
 
-  .hero-slogan-line {
-    font-size: 0.95rem !important;
-    line-height: 1.45;
+  .hero-title {
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 360px) {
   .hero-slogan-line {
-    font-size: 0.85rem !important;
+    font-size: 0.85rem;
+  }
+
+  .hero-slogan-card {
+    padding: 20px 14px;
+  }
+
+  .hero-title h1,
+  .hero-title h2 {
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-size: clamp(1.3rem, 7vw, 1.7rem);
+  }
+
+  .hero-title {
+    margin-bottom: 16px;
   }
 }
