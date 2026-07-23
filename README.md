@@ -1,5 +1,9 @@
 # Nexus Accountants — Financial Management Website
 
+## Live Site
+
+**URL**: [https://www.nexusaccountants.co.uk/](https://www.nexusaccountants.co.uk/)
+
 ## Overview
 
 Nexus Accountants is the official website for Nexus Accountants & Taxation Ltd, a UK-based firm providing accounting, taxation, payroll, and business advisory services. The website reflects the firm's commitment to delivering technology-driven, client-first financial solutions for startups, SMEs, and established businesses across the United Kingdom.
@@ -184,10 +188,6 @@ The website is fully responsive across all devices:
 This project is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
 
 Copyright 2024 Nexus Accountants & Taxation Ltd. All rights reserved.
-
-## Live Site
-
-**URL**: [https://www.nexusaccountants.co.uk/](https://www.nexusaccountants.co.uk/)
 
 ## Contact Information
 
