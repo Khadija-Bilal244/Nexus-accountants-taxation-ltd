@@ -84,7 +84,7 @@ src/
 └── main.jsx                # Entry point
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -127,7 +127,7 @@ VITE_API_URL=your_api_url_here
 VITE_APP_NAME=Nexus Accountants
 ```
 
-## ✏️ Content Management
+##  Content Management
 
 | To update... | Edit... |
 |---|---|
@@ -147,7 +147,7 @@ Fully responsive across every device:
 | Mobile | 480px – 768px | Single column |
 | Small Mobile | < 480px | Single column |
 
-## 🩺 Troubleshooting
+##  Troubleshooting
 
 <details>
 <summary><strong>Images not loading</strong></summary>
@@ -188,7 +188,7 @@ This project is **proprietary and confidential**. Unauthorized copying, distribu
 
 © 2024 Nexus Accountants & Taxation Ltd. All rights reserved.
 
-## 📬 Contact
+##  Contact
 
 | | |
 |---|---|
@@ -198,12 +198,12 @@ This project is **proprietary and confidential**. Unauthorized copying, distribu
 | 🕒 Hours | Mon – Fri, 9am – 5:30pm |
 | 📍 Location | United Kingdom |
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Built to support the mission of Nexus Accountants & Taxation Ltd. Special thanks to the Nexus team for their expertise and dedication to client service, and to HMRC for public resources and guidance.
 
 ---
 
 <div align="center">
-<sub>Built with React and a commitment to financial clarity.</sub>
+<h3>Built with React and a commitment to financial clarity.</h3>
 </div>
